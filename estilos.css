@@ -1,4 +1,3 @@
-
 body {
   font-family: Arial, sans-serif;
   background-color: #e0f7f7;
@@ -9,41 +8,39 @@ body {
 }
 
 h1 {
-  margin-top: 20px;
+  margin-bottom: 30px;
   color: #008b8b;
 }
 
 .malla {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 15px;
-  padding: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 .ramo {
   border: 2px solid #008b8b;
-  background-color: #b2dfdb;
-  padding: 15px;
   border-radius: 10px;
+  background-color: white;
+  color: #008b8b;
+  padding: 10px;
+  margin: 5px;
+  width: 180px;
   cursor: pointer;
-  transition: 0.3s;
-  font-size: 14px;
+  transition: all 0.2s ease-in-out;
 }
 
 .ramo:hover {
-  background-color: #4dd0e1;
+  background-color: #b2f0f0;
 }
 
-.ramo.aprobado {
-  background-color: #004d4d;
+.aprobado {
+  background-color: #00cccc;
   color: white;
-  text-decoration: line-through;
 }
 
-.ramo.bloqueado {
-  background-color: #d0d0d0;
-  color: #888;
+.bloqueado {
+  opacity: 0.5;
   cursor: not-allowed;
 }

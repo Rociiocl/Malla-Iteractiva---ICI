@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   background-color: #e0f7f7;
@@ -8,39 +9,58 @@ body {
 }
 
 h1 {
-  margin-bottom: 30px;
+  margin-top: 20px;
   color: #008b8b;
 }
 
-.malla {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 40px;
+.contenedor-malla {
+  overflow-x: auto;
+}
+
+.columnas {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  max-width: 1400px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.columna {
+  background-color: #e0fafa;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.columna h3 {
+  color: #006666;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .ramo {
   border: 2px solid #008b8b;
-  border-radius: 10px;
-  background-color: white;
-  color: #008b8b;
+  background-color: #b2dfdb;
   padding: 10px;
-  margin: 5px;
-  width: 180px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: 0.3s;
+  font-size: 13px;
+  margin-bottom: 10px;
 }
 
 .ramo:hover {
-  background-color: #b2f0f0;
+  background-color: #4dd0e1;
 }
 
-.aprobado {
-  background-color: #00cccc;
+.ramo.aprobado {
+  background-color: #004d4d;
   color: white;
+  text-decoration: line-through;
 }
 
-.bloqueado {
-  opacity: 0.5;
+.ramo.bloqueado {
+  background-color: #d0d0d0;
+  color: #888;
   cursor: not-allowed;
 }

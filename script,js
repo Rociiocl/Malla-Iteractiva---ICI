@@ -118,3 +118,12 @@ function crearMalla() {
 }
 
 crearMalla();
+
+
+function resetear() {
+  aprobados.clear();
+  crearMalla();
+  alert("Malla reiniciada.");
+}
+
+console.log("Script cargado y ejecutado correctamente.");

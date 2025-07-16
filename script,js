@@ -1,4 +1,3 @@
-
 const ramos = [
   { id: "intro_mate", nombre: "Introducción a las matemáticas", requisitos: [], año: 1, semestre: 1 },
   { id: "fund_gestion", nombre: "Fundamentos de gestión", requisitos: [], año: 1, semestre: 1 },
@@ -85,7 +84,7 @@ function crearMalla() {
       columna.className = "columna";
 
       const encabezado = document.createElement("h3");
-      encabezado.innerText = `Año ${año} - Sem ${semestre}`;
+      encabezado.innerText = Año ${año} - Sem ${semestre};
       columna.appendChild(encabezado);
 
       ramos
@@ -125,5 +124,7 @@ function resetear() {
   crearMalla();
   alert("Malla reiniciada.");
 }
+
+
 
 console.log("Script cargado y ejecutado correctamente.");
